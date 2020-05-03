@@ -25,7 +25,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
                     android:paddingHorizontal="20dp"
-                    android:text="Biodata App"
+                    android:text="Profile Activity"
                     android:textColor="#FFFFFF"
                     android:textSize="20sp"
                     android:textStyle="bold" />

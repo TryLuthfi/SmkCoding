@@ -6,34 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".activity.HomePage">
 
-    <ScrollView
-        android:scrollbars="none"
+    <LinearLayout
+        android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="50dp"
+        android:background="#008172">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="20dp"
+            android:text="Biodata App"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
             <LinearLayout
-                android:id="@+id/header"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="#008172">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:paddingHorizontal="20dp"
-                    android:text="Biodata App"
-                    android:textColor="#FFFFFF"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_below="@id/header"
                 android:id="@+id/isi"
                 android:orientation="vertical"
                 android:paddingHorizontal="20dp"
@@ -50,6 +49,7 @@
                     android:layout_height="wrap_content"/>
 
                 <EditText
+                    android:singleLine="true"
                     android:layout_marginTop="30dp"
                     android:layout_marginBottom="30dp"
                     android:hint="Nama"
@@ -65,6 +65,8 @@
                     android:layout_height="wrap_content" />
 
                 <EditText
+                    android:inputType="number"
+                    android:singleLine="true"
                     android:layout_marginBottom="30dp"
                     android:hint="Umur (th)"
                     android:id="@+id/umur"
@@ -72,6 +74,8 @@
                     android:layout_height="wrap_content" />
 
                 <EditText
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
                     android:id="@+id/email"
                     android:layout_marginBottom="30dp"
                     android:hint="Email"
@@ -79,6 +83,8 @@
                     android:layout_height="wrap_content" />
 
                 <EditText
+                    android:inputType="number"
+                    android:singleLine="true"
                     android:id="@+id/telp"
                     android:layout_marginBottom="30dp"
                     android:hint="Telp"
@@ -86,32 +92,33 @@
                     android:layout_height="wrap_content" />
 
                 <EditText
+                    android:maxLines="3"
                     android:id="@+id/alamat"
-                    android:layout_marginBottom="30dp"
+                    android:layout_marginBottom="25dp"
                     android:hint="Alamat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </LinearLayout>
 
+            <RelativeLayout
+                android:layout_below="@id/isi"
+                android:layout_marginHorizontal="20dp"
+                android:text="SIMPAN"
+                android:id="@+id/simpan"
+                android:background="#D1D6D6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:text="SIMPAN"
+                    android:textSize="18sp"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
         </RelativeLayout>
     </ScrollView>
-
-    <RelativeLayout
-        android:layout_alignParentBottom="true"
-        android:layout_margin="20dp"
-        android:text="SIMPAN"
-        android:id="@+id/simpan"
-        android:background="#D1D6D6"
-        android:layout_width="match_parent"
-        android:layout_height="50dp" >
-
-        <TextView
-            android:textColor="#000000"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:text="SIMPAN"
-            android:textSize="18sp"
-            android:layout_height="match_parent" />
-    </RelativeLayout>
 
 </RelativeLayout>

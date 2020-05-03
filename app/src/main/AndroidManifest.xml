@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.HasilData"></activity>
+        <activity android:name=".activity.About"></activity>
+        <activity android:name=".activity.EditProfil" />
+        <activity android:name=".activity.ProfilActivity" />
         <activity android:name=".activity.HomePage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
