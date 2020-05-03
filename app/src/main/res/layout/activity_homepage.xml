@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HomePage">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#008172">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="20dp"
+                    android:text="Biodata App"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@id/header"
+                android:id="@+id/isi"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textStyle="italic"
+                    android:textSize="22sp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:text="Biodata Diri"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:hint="Nama"
+                    android:id="@+id/nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/jenisKelamin"
+                    android:layout_marginBottom="30dp"
+                    android:entries="@array/jenis_kelamin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:layout_marginBottom="30dp"
+                    android:hint="Umur (th)"
+                    android:id="@+id/umur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_marginBottom="30dp"
+                    android:hint="Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/telp"
+                    android:layout_marginBottom="30dp"
+                    android:hint="Telp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/alamat"
+                    android:layout_marginBottom="30dp"
+                    android:hint="Alamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:text="SIMPAN"
+        android:id="@+id/simpan"
+        android:background="#D1D6D6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:text="SIMPAN"
+            android:textSize="18sp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</RelativeLayout>

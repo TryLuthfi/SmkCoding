@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HomePage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#008172">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="20dp"
+                    android:text="Biodata App"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@id/header"
+                android:id="@+id/isi"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textStyle="italic"
+                    android:textSize="22sp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:text="Biodata Diri"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_margin="20dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:background="@drawable/ic_circle_image"
+                        android:layout_height="100dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nama :"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_weight="2"
+                        android:textSize="18sp"
+                        android:id="@+id/nama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nama" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jenis Kelamin :"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_weight="2"
+                        android:textSize="18sp"
+                        android:id="@+id/jenisKelamin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="jenis kelamin" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Umur :"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_weight="2"
+                        android:textSize="18sp"
+                        android:id="@+id/umur"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="email" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email :"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_weight="2"
+                        android:textSize="18sp"
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="email" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Telp :"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_weight="2"
+                        android:textSize="18sp"
+                        android:id="@+id/telp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="telp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat :"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_weight="2"
+                        android:textSize="18sp"
+                        android:id="@+id/alamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="alamat" />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <LinearLayout
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:id="@+id/edit"
+            android:background="#D1D6D6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:text="EDIT NAMA"
+                android:textSize="15sp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:id="@+id/dial"
+            android:background="#D1D6D6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:text="DIAL"
+                android:textSize="15sp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:id="@+id/about"
+            android:background="#D1D6D6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:text="ABOUT"
+                android:textSize="15sp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
