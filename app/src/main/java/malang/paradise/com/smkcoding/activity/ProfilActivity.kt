@@ -18,6 +18,12 @@ class ProfilActivity : AppCompatActivity() {
         getHasil();
         edit.setOnClickListener { intentEdit() }
         dial.setOnClickListener { dialPressed(telp.text.toString()) }
+        about.setOnClickListener { aboutIntent() }
+    }
+
+    private fun aboutIntent() {
+        val intent = Intent(this, About::class.java)
+        startActivity(intent)
     }
 
     private fun dialPressed(phoneNumber : String) {

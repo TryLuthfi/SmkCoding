@@ -79,6 +79,7 @@
                         android:layout_weight="2"
                         android:textSize="18sp"
                         android:id="@+id/nama"
+                        android:textStyle="italic"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Nama" />
@@ -102,6 +103,7 @@
                         android:layout_weight="2"
                         android:textSize="18sp"
                         android:id="@+id/jenisKelamin"
+                        android:textStyle="italic"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="jenis kelamin" />
@@ -125,6 +127,7 @@
                         android:layout_weight="2"
                         android:textSize="18sp"
                         android:id="@+id/umur"
+                        android:textStyle="italic"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="email" />
@@ -147,6 +150,7 @@
                     <TextView
                         android:layout_weight="2"
                         android:textSize="18sp"
+                        android:textStyle="italic"
                         android:id="@+id/email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -170,6 +174,7 @@
                     <TextView
                         android:layout_weight="2"
                         android:textSize="18sp"
+                        android:textStyle="italic"
                         android:id="@+id/telp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -194,13 +199,11 @@
                         android:layout_weight="2"
                         android:textSize="18sp"
                         android:id="@+id/alamat"
+                        android:textStyle="italic"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="alamat" />
                 </LinearLayout>
-
-
-
 
             </LinearLayout>
 
