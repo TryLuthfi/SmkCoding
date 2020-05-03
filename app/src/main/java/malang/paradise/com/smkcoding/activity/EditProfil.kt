@@ -11,7 +11,7 @@ class EditProfil : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.)
+        setContentView(R.layout.activity_edit_profil)
 
         editNama.setText(intent.getStringExtra("namaUser"))
 
