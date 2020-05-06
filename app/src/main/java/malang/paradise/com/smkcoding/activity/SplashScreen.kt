@@ -17,7 +17,14 @@ class SplashScreen : AppCompatActivity() {
         setContentView(R.layout.activity_splash_screen)
 
         val animation = AnimationUtils.loadAnimation(this, R.anim.mytransition)
+        val slidetoleft = AnimationUtils.loadAnimation(this, R.anim.slidetoleft)
+        val slidetoright = AnimationUtils.loadAnimation(this, R.anim.slidetoright)
         image.startAnimation(animation)
+        image1.startAnimation(animation)
+        satu.startAnimation(slidetoright)
+        dua.startAnimation(slidetoright)
+        tiga.startAnimation(slidetoleft)
+        empat.startAnimation(slidetoleft)
 
         handler = Handler()
         handler.postDelayed({

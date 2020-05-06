@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#ffffff"
     android:layout_height="match_parent"
     tools:context=".activity.HomePage">
 
@@ -18,7 +19,7 @@
                 android:id="@+id/header"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="#008172">
+                android:background="#6F0FF7">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -210,64 +211,70 @@
         </RelativeLayout>
     </ScrollView>
 
-    <LinearLayout
-        android:layout_alignParentBottom="true"
-        android:layout_margin="20dp"
-        android:orientation="horizontal"
+    <androidx.cardview.widget.CardView
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
-        android:layout_height="50dp" >
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
 
         <LinearLayout
-            android:layout_marginRight="5dp"
-            android:layout_weight="1"
-            android:id="@+id/edit"
-            android:background="#D1D6D6"
             android:layout_width="match_parent"
-            android:layout_height="50dp" >
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-            <TextView
-                android:textColor="#000000"
-                android:gravity="center"
+            <LinearLayout
+                android:layout_marginRight="5dp"
+                android:id="@+id/edit"
                 android:layout_width="match_parent"
-                android:text="EDIT NAMA"
-                android:textSize="15sp"
-                android:layout_height="match_parent" />
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/bottomnav">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="EDIT NAMA"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dial"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/bottomnav">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="DIAL"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/bottomnav">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="ABOUT"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+            </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_marginHorizontal="10dp"
-            android:layout_weight="1"
-            android:id="@+id/dial"
-            android:background="#D1D6D6"
-            android:layout_width="match_parent"
-            android:layout_height="50dp" >
-
-            <TextView
-                android:textColor="#000000"
-                android:gravity="center"
-                android:layout_width="match_parent"
-                android:text="DIAL"
-                android:textSize="15sp"
-                android:layout_height="match_parent" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:id="@+id/about"
-            android:background="#D1D6D6"
-            android:layout_width="match_parent"
-            android:layout_height="50dp" >
-
-            <TextView
-                android:textColor="#000000"
-                android:gravity="center"
-                android:layout_width="match_parent"
-                android:text="ABOUT"
-                android:textSize="15sp"
-                android:layout_height="match_parent" />
-        </LinearLayout>
-    </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 
 </RelativeLayout>

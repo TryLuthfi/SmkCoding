@@ -7,13 +7,110 @@
     android:background="#FFFFFF"
     tools:context=".activity.SplashScreen">
 
-    <ImageView
-        android:id="@+id/image"
-        android:layout_centerInParent="true"
-        android:layout_width="400dp"
-        android:background="@drawable/logosplash"
-        android:layout_height="400dp" >
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_height="wrap_content">
 
-    </ImageView>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/satu"
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:background="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/tiga"
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:background="#000000" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tengah"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="-20dp"
+        android:background="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_marginBottom="-40dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/empat"
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:background="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="-40dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/dua"
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:background="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tengah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tengah"
+        android:layout_marginTop="40dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="s m k C o d i n g"
+            android:textColor="#03A9F4"
+            android:textSize="30sp"
+            android:textStyle="italic">
+
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="version 1.0"
+        android:textSize="15sp" />
+
 
 </RelativeLayout>
